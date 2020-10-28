@@ -51,7 +51,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
     - name: Download built artifact
       uses: actions/download-artifact@master
       with:
@@ -63,5 +63,5 @@ jobs:
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
-        repository: github-actions-for-packages/tic-tac-toe
+        repository: TharindaDilshan/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
